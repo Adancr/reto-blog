@@ -1,0 +1,11 @@
+/*****************
+*HEADER
+*****************/
+header {
+  display: flex;
+  justify-content: space-between;
+  color: $color-primary;
+  font-weight: bold;
+  align-items: center;
+  margin: 1.5rem 3rem;
+}
