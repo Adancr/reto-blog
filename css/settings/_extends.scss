@@ -1,0 +1,12 @@
+/*****************
+*EXTENDS
+****************/
+
+%container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.container {
+  @extend %container;
+}

@@ -1,0 +1,36 @@
+/**********************
+* POST ALL
+*********************/
+
+.container-all-article article {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+section article .info-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: .8rem 0 .8rem .8rem;
+}
+
+section article .info-post h2 {
+  margin-bottom: .7rem;
+  font-size: 1.4rem;
+  color: #1F3F68;
+}
+
+
+/* old-next-post  */
+
+.old_next-post {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.old_next-post a {
+  color: #356EAD;
+  letter-spacing: 0.04em;
+}
