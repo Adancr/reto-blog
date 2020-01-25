@@ -12,6 +12,11 @@ footer {
     margin-left: 8rem;
     padding-bottom: 1rem;
   }
+  @media (max-width: 540px) {
+    .container-footer {
+      margin-left: 1rem;
+    }
+  }
 }
 
 .container-footer {
@@ -20,24 +25,43 @@ footer {
     justify-content: space-between;
     align-items: center;
     /* margin: 4rem 0; */
+    @media (max-width: 540px) {
+      display: block;
+    }
     a {
       margin-right: 10rem;
       background-color: $color-secondary;
       border-radius: 10px;
       padding: .6rem 2rem;
       color: #ffffff;
+      @media (max-width: 540px) {
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+      }
     }
     div {
       max-width: 50%;
+      @media (max-width: 540px) {
+        max-width: 100%;
+      }
       h2 {
         padding: 2rem 0;
         letter-spacing: 0.05em;
+        color: $white-color;
       }
     }
   }
   .contact-navegation {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 540px) {
+      display: block;
+      .logo-footer {
+        justify-content: flex-start;
+      }
+    }
   }
   h4 {
     padding: .8rem 0;

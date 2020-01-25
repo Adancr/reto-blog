@@ -4,8 +4,8 @@
 
 section .post-popular {
   display: grid;
-  grid-template-columns: 40% 60%;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  // grid-template-columns: 40% 60%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
   margin: 1rem 0;
   div:first-child {
@@ -17,6 +17,14 @@ section .post-popular {
     color: $color-primary;
     font-size: 2.2rem;
     letter-spacing: 0.04em;
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img-pst" "items-post-popular";
+    .img-pst {
+      grid-area: img-pst;
+    }
   }
 }
 
@@ -56,6 +64,9 @@ section .post-popular {
   p {
     color: rgba(0, 0, 0, 0.6);
     margin: 1rem 0 .8rem 0;
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr
   }
 }
 
